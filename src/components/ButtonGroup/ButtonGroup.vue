@@ -1,6 +1,6 @@
 <template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
   <div>
-    <h1 class="text-center mt-2">Breadcrumb</h1>
+    <h1 class="text-center mt-1">Button Group</h1>
     <hr/>
     <ButtonCollapseItem
       v-for="component in components"
@@ -14,18 +14,21 @@
 
 <script>
   import ButtonCollapseItem from '../ButtonCollapseItem'
-  import BreadcrumbBasic from "./BreadcrumbBasic";
-  import BreadcrumbManualItems from "./BreadcrumbManualItems";
+  import Basic from "./Basic";
+  import Sizing from "./Sizing";
+  import Vertical from "./Vertical";
+  import DropdownMenu from "./DropdownMenu";
+
   export default {
-    name: "Breadcrumb",
-    components: {
-      ButtonCollapseItem,
-    },
+    name: "ButtonGroup",
+    components: {ButtonCollapseItem},
     data() {
       return {
         components: [
-          { name: 'Basic', component: BreadcrumbBasic },
-          { name: 'Manual Items', component: BreadcrumbManualItems }
+          { name: 'Basic', component: Basic },
+          { name: 'Sizing', component: Sizing },
+          { name: 'Vertical', component: Vertical },
+          { name: 'Dropdown Menu', component: DropdownMenu },
         ]
       }
     }

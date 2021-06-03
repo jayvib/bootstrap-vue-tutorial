@@ -10,6 +10,11 @@
           <b-nav-item @click="$router.push('/avatar')">Avatar</b-nav-item>
           <b-nav-item @click="$router.push('/badge')">Badge</b-nav-item>
           <b-nav-item @click="$router.push('/breadcrumb')">Breadcrumb</b-nav-item>
+          <b-nav-item @click="$router.push('/button')">Button</b-nav-item>
+          <b-nav-item @click="$router.push('/buttongroup')">Button Group</b-nav-item>
+          <b-nav-item @click="$router.push('/buttontoolbar')">Button Toolbar</b-nav-item>
+          <b-nav-item @click="$router.push('/calendar')">Calendar</b-nav-item>
+          <b-nav-item @click="$router.push('/card')">Card</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

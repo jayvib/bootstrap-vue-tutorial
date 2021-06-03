@@ -6,6 +6,12 @@ import Aspect from "@/components/Aspect/Aspect";
 import Avatar from "@/components/Avatar/Avatar";
 import Badge from "../components/Badge/Badge";
 import Breadcrumb from "../components/Breadcrumb/Breadcrumb";
+import Button from "../components/Button/Button";
+import BreadcrumbHome from "../components/Breadcrumb/BreadcrumbHome";
+import ButtonGroup from "../components/ButtonGroup/ButtonGroup";
+import ButtonToolbar from "../components/ButtonToolbar/ButtonToolbar";
+import Calendar from "../components/Calendar/Calendar";
+import Card from "../components/Card/Card"
 
 Vue.use(VueRouter);
 
@@ -33,6 +39,30 @@ const routes = [
   {
     path: '/breadcrumb',
     component: Breadcrumb,
+  },
+  {
+    path: '/button',
+    component: Button,
+  },
+  {
+    path: '/buttongroup',
+    component: ButtonGroup,
+  },
+  {
+    path: '/buttontoolbar',
+    component: ButtonToolbar,
+  },
+  {
+    path: '/breadcrumb/home',
+    component: BreadcrumbHome,
+  },
+  {
+    path: '/calendar',
+    component: Calendar
+  },
+  {
+    path: '/card',
+    component: Card,
   }
 ];
 
